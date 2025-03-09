@@ -14,7 +14,7 @@ export interface CountyGDP {
 
 export const counties: CountyGDP[] = [
   {
-    code: '230181',
+    code: '230184',
     name: '五常市',
     prefecture: '2301',
     rank: 1,
@@ -22,7 +22,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 41102,
   },
   {
-    code: '231182',
+    code: '231183',
     name: '嫩江市',
     prefecture: '2311',
     rank: 1,
@@ -158,7 +158,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 29394,
   },
   {
-    code: '231005',
+    code: '231083',
     name: '海林市',
     prefecture: '2310',
     rank: 2,
@@ -174,7 +174,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 43097,
   },
   {
-    code: '230625',
+    code: '230624',
     name: '杜尔伯特县',
     prefecture: '2306',
     rank: 3,
@@ -214,7 +214,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 68516,
   },
   {
-    code: '231183',
+    code: '231182',
     name: '五大连池市',
     prefecture: '2311',
     rank: 3,
@@ -238,7 +238,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 55468,
   },
   {
-    code: '230383',
+    code: '230321',
     name: '鸡东县',
     prefecture: '2303',
     rank: 3,
@@ -334,7 +334,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 33880,
   },
   {
-    code: '230222',
+    code: '230223',
     name: '依安县',
     prefecture: '2302',
     rank: 5,
@@ -350,7 +350,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 34674,
   },
   {
-    code: '230826',
+    code: '230828',
     name: '汤原县',
     prefecture: '2308',
     rank: 5,
@@ -358,7 +358,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 47049,
   },
   {
-    code: '230128',
+    code: '230129',
     name: '延寿县',
     prefecture: '2301',
     rank: 8,
@@ -366,7 +366,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 44381,
   },
   {
-    code: '230229',
+    code: '230230',
     name: '克东县',
     prefecture: '2302',
     rank: 6,
@@ -374,7 +374,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 50329,
   },
   {
-    code: '230228',
+    code: '230224',
     name: '泰来县',
     prefecture: '2302',
     rank: 7,
@@ -390,7 +390,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 42494,
   },
   {
-    code: '230821',
+    code: '230826',
     name: '桦川县',
     prefecture: '2308',
     rank: 6,
@@ -398,7 +398,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 51943,
   },
   {
-    code: '230224',
+    code: '230231',
     name: '拜泉县',
     prefecture: '2302',
     rank: 8,
@@ -422,9 +422,9 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 28663,
   },
   {
-    code: '230781',
+    code: '230921',
     name: '勃利县',
-    prefecture: '2307',
+    prefecture: '2309',
     rank: 1,
     gdp: { year2023: 66.4, year2022: 67.45 },
     perCapitaGDP: 34674,
@@ -462,7 +462,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 29086,
   },
   {
-    code: '231124',
+    code: '231123',
     name: '逊克县',
     prefecture: '2311',
     rank: 4,
@@ -494,7 +494,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 55568,
   },
   {
-    code: '230719',
+    code: '230724',
     name: '丰林县',
     prefecture: '2307',
     rank: 3,
@@ -518,7 +518,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 50123,
   },
   {
-    code: '230716',
+    code: '230726',
     name: '南岔县',
     prefecture: '2307',
     rank: 4,
@@ -526,7 +526,7 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 27698,
   },
   {
-    code: '230726',
+    code: '230723',
     name: '汤旺县',
     prefecture: '2307',
     rank: 5,
@@ -534,11 +534,11 @@ export const counties: CountyGDP[] = [
     perCapitaGDP: 60383,
   },
   {
-    code: '232723',
+    code: '232721',
     name: '呼玛县',
     prefecture: '2327',
     rank: 3,
-    gdp: { year2023: 15.73, year2022: 15.69 },
+    gdp: { year2023: 18.69, year2022: 19.2 },
     perCapitaGDP: 53400,
   },
   {

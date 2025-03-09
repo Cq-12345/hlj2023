@@ -68,7 +68,10 @@ export function sortCounties(
   sortBy: SortType = 'gdp2023',
   direction: SortDirection = 'desc'
 ): FormattedCountyGDP[] {
-  return [...data].sort((a, b) => {
+  console.log('排序前数据数量:', data.length)
+  console.log('排序前数据codes:', data.map(c => c.code))
+  
+  const result = [...data].sort((a, b) => {
     let valueA: number, valueB: number
 
     switch (sortBy) {
@@ -103,6 +106,26 @@ export function sortCounties(
 
     return primaryCompare
   })
+  
+  console.log('排序后数据数量:', result.length)
+  console.log('排序后数据codes:', result.map(c => c.code))
+  
+  // 检查是否有重复项
+  const codeSet = new Set()
+  const duplicates = []
+  for (const county of result) {
+    if (codeSet.has(county.code)) {
+      duplicates.push(county.code)
+    } else {
+      codeSet.add(county.code)
+    }
+  }
+  
+  if (duplicates.length > 0) {
+    console.error('发现重复项:', duplicates)
+  }
+  
+  return result
 }
 
 /**

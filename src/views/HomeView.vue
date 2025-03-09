@@ -57,16 +57,23 @@ watch(activeChartType, (newType) => {
 
 // 更新显示数据
 function updateDisplayedData() {
+  console.log('更新显示数据开始，当前allCounties数量:', allCounties.value.length)
   // 先应用筛选
   let filteredData = filterCounties(allCounties.value, filterOptions.value)
+  console.log('筛选后数据数量:', filteredData.length)
   // 再应用排序
   displayedCounties.value = sortCounties(filteredData, sortBy.value, sortDirection.value)
+  console.log('排序后displayedCounties数量:', displayedCounties.value.length)
+  console.log('排序后displayedCounties中的县市codes:', displayedCounties.value.map(c => c.code))
   // 更新统计数据
   statistics.value = getStatistics(displayedCounties.value)
 }
 
 // 处理排序变化
 function handleSortChange(column: SortType) {
+  console.log('排序变化前，当前排序列:', sortBy.value, '排序方向:', sortDirection.value)
+  console.log('当前displayedCounties数量:', displayedCounties.value.length)
+  
   if (sortBy.value === column) {
     // 如果点击的是当前排序列，则切换排序方向
     sortDirection.value = sortDirection.value === 'asc' ? 'desc' : 'asc'
@@ -75,6 +82,8 @@ function handleSortChange(column: SortType) {
     sortBy.value = column
     sortDirection.value = 'desc'
   }
+  
+  console.log('排序变化后，新排序列:', sortBy.value, '新排序方向:', sortDirection.value)
   updateDisplayedData()
 }
 
