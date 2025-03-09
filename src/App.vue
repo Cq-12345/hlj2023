@@ -13,7 +13,7 @@ onMounted(() => {
   if (!localStorage.getItem(visitedKey)) {
     // 显示更新弹窗
     ElMessageBox.alert(
-      '3月9日更新——增加了诸多功能。<br>存在bug：排序时会出问题，存在排序后莫名其妙多出一些项的bug，待修改。',
+      '3月9日更新——增加了诸多功能。',
       '更新提示',
       {
         dangerouslyUseHTMLString: true,
